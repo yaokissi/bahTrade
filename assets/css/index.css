@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+   padding: 0; 
+   /* font-family:"Poppins", Sans-serif; */
+ font-family: 'Ubuntu', sans-serif; 
+
+
+}
+header {
+    background-image: url("../images/pinneapple.jpg");
+    width: 100%;
+    height: 100vh; 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav {
+    background-color:rgba(255, 255, 255, .40);
+}
+nav img {
+    margin-left: 10%;
+}
+h1 {
+    margin-left: 10%;
+    margin-top: 100px;
+    font-size: 40px;
+    font-family: 'Bruno Ace SC', cursive;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(255, 255, 255);    
+}
+.btnHeader {
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+    margin-left: 10%;
+    margin-top: 50px;
+     font-family: 'Ubuntu', sans-serif; 
+    
+
+}
+.btnHeader button {
+   
+    border: 1px solid #73ae42;
+    padding: 20px;
+     border-radius: 50px; 
+    width: 40%;
+    color:white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.btn1 {
+     background-color:rgba(255, 255, 255, .40);
+}
+.btn2{
+     background-color: #73ae42;
+}
+
+.btn1:hover {
+     background-color: #73ae42; 
+    }
+.avantages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+}   
+.avantages img {
+    height: 70px;
+    background-color:rgba(255, 255, 255, .40);
+    padding: 30px;
+}
+.our-missions{
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #f3f3f3;
+    border-radius: 20px;
+    padding: 10px;
+}
+.our-missions p {
+    margin-top:40px ;
+    text-align: center;
+   
+}
+.our-products {
+    margin-top: 50px;
+    /* background-color: #73ae42; */
+    padding: 50px;
+}
+.products{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.products div {
+    width: 20%;
+    font-size: 13.5px;
+    background-color: #fdeaca;
+    /* padding: 5px; */
+    border-radius: 20px;
+}
+.ananas {
+    display: flex;
+}
+.products span {
+    color: #ae6c48;
+    font-weight: bold;
+}
+.products p {
+    width: 100%;
+    margin-top: 8px;
+   
+}
+.products img{
+    
+    width: 100%;
+    border-radius: 20px;
+}
+
+h2 {
+    letter-spacing: 10px;
+    text-align: center;
+}
+h3 {
+    margin-top: 18px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+footer {
+    text-align: center;
+    background-color: #73ae42;
+    color: white;
+}
+
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   background-color:#f3f3f3 ;
+    margin-left: auto;
+   margin-right: auto; 
+   width: 50%;
+   margin-top: 20px;
+   border-radius: 50px;
+}
+.contact div{
+    width: 45%;
+}
+
+ /* .green {
+ 
+
+}  */
+form {
+    text-align: center;
+}
+input,select,option {
+     padding: 20px;
+    border-radius: 50px;
+    border: 1px solid #73ae42; 
+     width: 100%; 
+    margin-top: 10px;
+    background-color: #f3f3f3; 
+}
+textarea {
+    width:  100%; 
+    resize: none;
+    margin-top: 10px;
+    background-color: #f3f3f3;
+    
+}
+input[type="submit"] {
+    background-color:#73ae42;
+    color: white;
+    border: none;
+    width: 50%; 
+    padding: 15px;
+    border-radius: 80px;
+    /* margin: 0 auto; */
+    margin-top: 10px;
+  }
+  .right-side{
+    
+    text-align: center;
+}
+.contact p{
+margin-top: 50px;
+} 
+.contactImg{
+    margin-top: 50px;
+}
