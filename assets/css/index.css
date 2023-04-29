@@ -173,7 +173,17 @@ footer a {
 form {
     text-align: center;
 }
-input,select,option {
+form span {
+    font-size: 12px;
+    color: #73ae42;
+    
+}
+form a {
+    
+    color: blue;
+    text-decoration: underline; 
+}
+input[type="text"],select,option,input[type="message"] {
      padding: 20px;
     border-radius: 50px;
     border: 1px solid #73ae42; 
@@ -212,6 +222,29 @@ a {
     text-decoration: none;
     color: black;
 }
+
+/* bouton top */
+/*
+#btnScrollToTop {
+    display: none ;  Masquer le bouton par défaut 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 260px;
+  }
+  
+  #btnScrollToTop:hover {
+    background-color: #333;
+  } */
+  
 /*  responsive desing to mobile and tablet */
 /* Media Queries */
     
@@ -230,7 +263,9 @@ a {
         width: 100%;
         
     }
-   
+   .avantages img {
+    height: 40px;
+   }
 
     .products div {
         width: 100%;
@@ -243,7 +278,8 @@ a {
         width: 100%;
     }
 
-    input,
+    input[type="text"],
+    input[type="message"],
     select,
     option,
     textarea {
@@ -254,26 +290,7 @@ a {
         width: 100%;
     }
 }
-#btnScrollToTop {
-    /*display: none ;  Masquer le bouton par défaut */
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 260px;
-  }
-  
-  #btnScrollToTop:hover {
-    background-color: #333;
-  }
-  
+
 
 @media only screen and (max-width: 480px) {
     /* Adjustments for mobile screens */
@@ -286,9 +303,11 @@ a {
     }
 
     .avantages {
-        width: 100%;
+        width: 90%;
     }
-
+    .avantages img {
+        height: 40px;
+       }
     .products div {
         width: 100%;
         margin-top: 10px;
