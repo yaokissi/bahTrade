@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/bah_trade_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Ubuntu:ital,wght@0,400;0,500;1,500;1,700&display=swap" rel="stylesheet">
@@ -16,18 +17,19 @@
         </nav>
          <h1>Des produits agricoles frais et sains directement depuis l'Afrique pour vous !</h1>
         <div class="btnHeader">
-             <button class="btn2">Contact </button>
-                 <button class="btn1">Produits</button>            
+             <a class="btn2" href="#contact">Contact </a>
+             <a class="btn1" href="#products">Produits</a>             
         </div>
         <div class="avantages">
-            <img src="assets/images/world.png" alt="bah trade expertise" title="bah trade expertise">        
-            <img src="assets/images/exclusive.png" alt="bah trade qualité">           
-            <img src="assets/images/shield (1).png" alt="bah trade sécurité">
+            <img src="assets/images/internet.png" alt="bah trade expertise" title="bah trade expertise">        
+            <img src="assets/images/exclusive_.png" alt="bah trade qualité">           
+            <img src="assets/images/shield_.png" alt="bah trade sécurité">
          
         </div>
        
     </header>
     <main>
+        <button onclick="scrollToTop()" id="btnScrollToTop">haut</button>
         <section class="our-missions">
             <h2>Notre Mission</h2>
             <p>BAH TRADE a pour objectif de faire connaître la qualité exceptionnelle de l'ananas du Bénin,
@@ -35,7 +37,7 @@
                 organoleptique, mérite d'être découvert à travers le monde. Notre entreprise s'engage à
                 fournir des produits agricoles frais et sains directement de la ferme à votre table.</p>
         </section>
-        <section class="our-products">
+        <section class="our-products" id="products">
             <h2>Nos Produits Phares</h2>
         <div class="products">
                 
@@ -119,7 +121,7 @@
             </div>
         </section>
         <h2> AIDE ET CONTACT</h2>
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="green">
                 <form action="#">
                         <select name="" id="">
@@ -136,7 +138,7 @@
                         <input type="submit" value="Soumettre">        
                 </form>
             </div>
-            <p>test de fonctionnement github</p>
+           
           <div class="right-side">
            <img class="contactImg"src="./assets/images/phone.png" alt="Telephone icone" height="50">  <p> 03 21 62 85 90 </p>
             <img class="contactImg"src="./assets/images/location.png" alt="Telephone icone" height="50">  <p>Cotonou, Bénin</p>
@@ -148,7 +150,9 @@
         </section>
     </main>
     <footer>
-        <p>©2023 BAH TRADE , All Right Reserved</p>
+        <p> © - 2023 BAH TRADE , All Right Reserved - Crée par<a href="">Kissi Yao</a></p>
     </footer>
 </body>
+<script src="javascript/scrolling-effect.js"></script>
+<script src="javascript/topButton.js"></script>
 </html>

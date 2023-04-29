@@ -38,16 +38,17 @@ h1 {
     
 
 }
-.btnHeader button {
+.btnHeader a {
    
     border: 1px solid #73ae42;
     padding: 20px;
      border-radius: 50px; 
     width: 40%;
-    color:white;
+    color:black;
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
 }
 .btn1 {
      background-color:rgba(255, 255, 255, .40);
@@ -98,11 +99,12 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 50px;
+    
 }
 .products div {
     width: 20%;
     font-size: 13.5px;
-    background-color: #fdeaca;
+     background-color: #fdeaca; 
     /* padding: 5px; */
     border-radius: 20px;
 }
@@ -110,7 +112,7 @@ h1 {
     display: flex;
 }
 .products span {
-    color: #ae6c48;
+    color: orange;
     font-weight: bold;
 }
 .products p {
@@ -138,11 +140,17 @@ h3 {
 
 footer {
     text-align: center;
-    background-color: #73ae42;
-    color: white;
+    color: black;
+    margin-top: 50px;
+    padding: 10px;
+    border-top: 1px solid #73ae42;
 }
 
-
+footer a {
+    margin-left: 5px;
+    color: blue;
+    text-decoration: underline;
+}
 .contact {
     display: flex;
     flex-wrap: wrap;
@@ -199,4 +207,93 @@ margin-top: 50px;
 } 
 .contactImg{
     margin-top: 50px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+/*  responsive desing to mobile and tablet */
+/* Media Queries */
+    
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    h1 {
+        font-size: 30px;
+    }
+
+    .btnHeader {
+        width: 90%;
+        margin-left: 0;
+    }
+
+    .avantages {
+        width: 100%;
+        
+    }
+   
+
+    .products div {
+        width: 100%;
+    }
+    .contact {
+        width: 80%;
+    }
+
+    .contact div {
+        width: 100%;
+    }
+
+    input,
+    select,
+    option,
+    textarea {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+#btnScrollToTop {
+    /*display: none ;  Masquer le bouton par défaut */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 260px;
+  }
+  
+  #btnScrollToTop:hover {
+    background-color: #333;
+  }
+  
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for mobile screens */
+    h1 {
+        font-size: 24px;
+    }
+
+    .btnHeader {
+        width: 90%;
+    }
+
+    .avantages {
+        width: 100%;
+    }
+
+    .products div {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .contact {
+        width: 100%;
+    }
 }

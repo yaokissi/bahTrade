@@ -1,0 +1,19 @@
+// Afficher ou masquer le bouton en fonction du défilement de la page
+window.onscroll = function() {
+    showScrollButton();
+  };
+  
+  function showScrollButton() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      document.getElementById("btnScrollToTop").style.display = "block";
+    } else {
+      document.getElementById("btnScrollToTop").style.display = "none";
+    }
+  }
+  
+  // Faire défiler la page vers le haut lorsque le bouton est cliqué
+  function scrollToTop() {
+    document.body.scrollTop = 0; // Pour les navigateurs Safari
+    document.documentElement.scrollTop = 0; // Pour les autres navigateurs
+  }
+  
