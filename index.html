@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav>
-            <img src="./assets/images/bah_trade_logo.png" alt="logo de Bah Trade" title="Logo de Bah Trade" height="120">
+            <img src="./assets/images/bah_trade_logo.png" alt="logo de Bah Trade" title="Logo de Bah Trade" height="150">
         </nav>
          <h1>Des produits agricoles frais et sains directement depuis l'Afrique pour vous !</h1>
         <div class="btnHeader">
@@ -120,44 +120,59 @@
                 </div>
             </div>
         </section>
-        <h2> AIDE ET CONTACT</h2>
-        <section class="contact" id="contact">
+        <h2 id="contact"> AIDE ET CONTACT</h2>
+        <section class="contact" >
             <div class="green">
                 <form action="#">
-                        <select name="" id="">
+                        <!-- <select name="" id="">
                             <option value="">Demande d'informations</option>
                             <option value="">Autres</option>
-                        </select>
-                        <input type="text" name="raisonSociale" id="" placeholder="Raison Sociale" >
-                        <input type="text" name="nom" id=""placeholder="(*) Nom">
-                        <input type="text" name="prenom" id="" placeholder=" Prenom">
+                        </select> -->
+                        <!-- <input type="text" name="raisonSociale" id="" placeholder="Raison Sociale" > -->
+                        <input type="text" name="nom" id=""placeholder="Nom*" required>
+                        <!-- <input type="text" name="prenom" id="" placeholder=" Prenom"> -->
                         <!-- <input type="text" name="numeroTelephone" id="" placeholder="Numéro de Téléphone"> -->
-                        <input type="text" name="adresseCourriel" id="" placeholder="(*) Adresse Courriel">
-                        <input type="text" name="ville" id="" placeholder="Ville / Pays">
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="(*) Votre Message"></textarea>
-                        <input type="checkbox" name="" id=""> <span> Je confirme avoir lu et compris les <a href="#">termes et conditions</a>, ainsi que la <a href="#">politique de confidentialité</a>.</span> <br>
+                        <input type="text" name="adresseCourriel" id="" placeholder=" Adresse Courriel*" required>
+                        <!-- <input type="text" name="ville" id="" placeholder="Ville / Pays"> -->
+                        <input type="text" name="objetMessage" placeholder="Objet*" required>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Votre Message*" required></textarea>
+                        <label class="checkbox-line">
+                        <input type="checkbox" name="" id="" required> <span> Je confirme avoir lu et compris les <a href="#">termes et conditions</a>, ainsi que la <a href="#">politique de confidentialité</a>.</span>
+                        </label>
+                        <br>
+                        <label class="checkbox-line">
                         <input type="checkbox" name="" id=""> <span> J'accepte de fournir les informations demandées et de consentir à leur traitement aux fins spécifiées dans le formulaire. </span>
+                        </label>
                         <p>(*) champ obligatoire</p>
 
-                        <input type="submit" value="Soumettre">        
+                        <input type="submit" value="envoyer">        
                 </form>
 
             </div>
            
-          <div class="right-side">
+          <!-- <div class="right-side">
+            
            <img class="contactImg"src="./assets/images/phone.png" alt="Telephone icone" height="50">  <p> 03 21 62 85 90 </p>
             <img class="contactImg"src="./assets/images/location.png" alt="Telephone icone" height="50">  <p>Cotonou, Bénin</p>
             <p>Toujours dans la recherche d'une meilleure qualité de service, nous nous efforçons de traiter les demandes dans les plus brefs délais !</p>
             <img class="contactImg"src="./assets/images/feuilleS.png" alt="Telephone icone" height="80">
             <img class="contactImg"src="./assets/images/feuilleS2.png" alt="Telephone icone" height="80">
-          </div>
+          </div> -->
            
         </section>
     </main>
     <footer>
-        <p> © - 2023 BAH TRADE , All Right Reserved - Crée par<a href="">Kissi Yao</a></p>
+        <div class="navfooter">
+            <div>
+                <img src="./assets/images/bah_trade_logo.png" alt="logo de Bah Trade" title="Logo de Bah Trade" height="120">
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <p> © - 2023 BAH TRADE , All Rights Reserved - Site par<a href="https://yaodev.vercel.app/" target="_blank">Kissi Yao</a></p>
     </footer>
 </body>
-<script src="javascript/scrolling-effect.js"></script>
+<!-- <script src="javascript/scrolling-effect.js"></script> -->
 <script src="javascript/topButton.js"></script>
 </html>

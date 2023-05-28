@@ -3,11 +3,11 @@
    padding: 0; 
    /* font-family:"Poppins", Sans-serif; */
  font-family: 'Ubuntu', sans-serif; 
-
+scroll-behavior: smooth;
 
 }
 header {
-    background-image: url("../images/pinneapple.jpg");
+    background-image: url("../images/pineapple2.jpg");
     width: 100%;
     height: 100vh; 
     background-size: cover;
@@ -154,24 +154,35 @@ footer a {
 .contact {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+     justify-content: space-between; 
    background-color:#f3f3f3 ;
-    margin-left: auto;
-   margin-right: auto; 
-   width: 50%;
+    /* margin-left: auto;
+   margin-right: auto;  */
+    width: 100%;
    margin-top: 20px;
-   border-radius: 50px;
+   /* border-radius: 50px; */
+    text-align: center; 
+   background-image: url("http://food-drop.themerex.net/wp-content/uploads/2016/12/bg-2.jpg?id=481");
+   /* background-size: cover; */
+   background-repeat: no-repeat;
 }
 .contact div{
     width: 45%;
 }
+.right-side{
+    
+   
+}
 
- /* .green {
- 
-
-}  */
 form {
+   
+}
+.green {
     text-align: center;
+    margin-left: auto;
+  margin-right: auto;   
+  width: 50%;
+  /* background-color: red; */
 }
 form span {
     font-size: 12px;
@@ -195,23 +206,35 @@ textarea {
     width:  100%; 
     resize: none;
     margin-top: 10px;
+    margin-bottom: 10px;
     background-color: #f3f3f3;
+    border-radius: 50px;
+    padding: 20px;
+
     
 }
 input[type="submit"] {
+    cursor :pointer;
     background-color:#73ae42;
     color: white;
     border: none;
-    width: 50%; 
+    width: 25%; 
     padding: 15px;
     border-radius: 80px;
     /* margin: 0 auto; */
     margin-top: 10px;
+    box-shadow: 0 3px 0 0 black;
   }
-  .right-side{
+  .checkbox-line {
+    display: flex;
+    align-items: center;
     
-    text-align: center;
 }
+
+.checkbox-line input[type="checkbox"] {
+    margin-right: 10px;
+}
+
 .contact p{
 margin-top: 50px;
 } 
@@ -271,7 +294,14 @@ a {
         width: 100%;
     }
     .contact {
-        width: 80%;
+        width: 100%;
+        background-image: none;
+    }
+    .green {
+        text-align: center;
+    margin-left: auto;
+  margin-right: auto;   
+  width: 50%;
     }
 
     .contact div {
@@ -286,9 +316,20 @@ a {
         width: 100%;
     }
 
-    input[type="submit"] {
+    /* input[type="submit"] {
         width: 100%;
+    } */
+    .green {
+        text-align: center;
+    margin-left: auto;
+  margin-right: auto;   
+  width: 50%;
     }
+    form span {
+        /* color: black;
+        font-weight: bold; */
+    }
+
 }
 
 
@@ -314,5 +355,16 @@ a {
     }
     .contact {
         width: 100%;
+        background-image: none;
+    }
+    .green {
+        text-align: center;
+    margin-left: auto;
+  margin-right: auto;   
+  width: 50%;
+    }
+    form span {
+        /* color: black;
+        font-weight: bold; */
     }
 }
