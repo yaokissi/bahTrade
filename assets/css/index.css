@@ -7,26 +7,54 @@ scroll-behavior: smooth;
 
 }
 header {
-    background-image: url("../images/pineapple2.jpg");
+    background-image: url("../images/headerBg.jpg");
     width: 100%;
     height: 100vh; 
     background-size: cover;
     background-repeat: no-repeat;
 }
 nav {
-    background-color:rgba(255, 255, 255, .40);
+    /* background-color:rgba(255, 255, 255, .40); */
+    background-color: #f3f3f3; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: fixed;
+    top: 0;
+    width: 100%;
+   z-index: 9999; 
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   height: 120px;
+
+}
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+    list-style-type: none;
+}
+ul  a{
+    text-transform: uppercase;
+    /* font-weight: bold; */
+
+}
+ul a:hover {
+    color: #73ae42;
+
 }
 nav img {
     margin-left: 10%;
 }
 h1 {
     margin-left: 10%;
-    margin-top: 100px;
+    padding-top: 250px; 
     font-size: 40px;
     font-family: 'Bruno Ace SC', cursive;
     text-transform: uppercase;
     font-weight: bold;
-    color:rgb(255, 255, 255);    
+    color:rgb(255, 255, 255);   
+    z-index: 10000; 
 }
 .btnHeader {
     display: flex;
@@ -71,7 +99,8 @@ h1 {
 }   
 .avantages img {
     height: 70px;
-    background-color:rgba(255, 255, 255, .40);
+    /* background-color:rgba(255, 255, 255, .40); */
+    background-color: #f3f3f3;
     padding: 30px;
 }
 .our-missions{
@@ -99,7 +128,7 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 50px;
-    
+   
 }
 .products div {
     width: 20%;
@@ -129,6 +158,7 @@ h1 {
 h2 {
     letter-spacing: 10px;
     text-align: center;
+    margin-top: 30px;
 }
 h3 {
     margin-top: 18px;
@@ -159,7 +189,7 @@ footer a {
     /* margin-left: auto;
    margin-right: auto;  */
     width: 100%;
-   margin-top: 20px;
+   margin-top: 100px;
    /* border-radius: 50px; */
     text-align: center; 
    background-image: url("http://food-drop.themerex.net/wp-content/uploads/2016/12/bg-2.jpg?id=481");
