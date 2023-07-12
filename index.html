@@ -13,29 +13,43 @@
 <body>
     <header>
         <nav>
-            <img src="./assets/images/bah_trade_logo.png" alt="logo de Bah Trade" title="Logo de Bah Trade" height="150">
             
-            <ul>
-               <a href="#"><li>Services</li></a>  
-               <a href="#products"><li>Produits</li></a> 
-               <a href="#"><li>Partenaires</li></a>
-               <a href="#"><li>Services</li></a>  
-               <a href="#contact"> <li>contact</li></a>
+                <img src="./assets/images/bah_trade_logo.png" class="logo" alt="logo de Bah Trade" title="Logo de Bah Trade" height="150">
+            
+            <div class="toggle">
+                <img src="assets/images/burger-bar.png" class ="ouvrir" alt="" height="30">
+                <img src="assets/images/close.png"class="fermer" alt="" height="30">
+            </div>
+            <ul class="menu">
+                <a href="#"><li>Mission</li></a>
+                <a href="#products"><li>Produits</li></a>
+                <a href="#"><li>Partenaires</li></a>
+                <a href="#"><li>Services</li></a>
+                <a href="#contact"><li>contact</li></a>
             </ul>
+            
         </nav>
-         <h1>Des produits agricoles frais et sains directement depuis l'Afrique pour vous !</h1>
+        <h1>Des produits agricoles frais et sains directement depuis l'Afrique pour vous !</h1>
         <div class="btnHeader">
-             <a class="btn2" href="#contact">Contact </a>
-             <a class="btn1" href="#products">Produits</a>             
+            <a class="btn2" href="#contact">Contact</a>
+            <a class="btn1" href="#products">Produits</a>
         </div>
         <div class="avantages">
-            <img src="assets/images/internet.png" alt="bah trade expertise" title="bah trade expertise">        
-            <img src="assets/images/exclusive_.png" alt="bah trade qualité">           
-            <img src="assets/images/shield_.png" alt="bah trade sécurité">
-         
+            <figure>
+                <img src="assets/images/exclusive_.png" alt="bah trade qualité">
+                <figcaption>Meilleure Qualité</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/shield_.png" alt="bah trade sécurité">
+                <figcaption>Transaction sécurisée</figcaption>
+            </figure>
+            <figure>
+                <img src="assets/images/internet.png" alt="bah trade expertise" title="bah trade expertise">
+                <figcaption>Expertise International</figcaption>
+            </figure>
         </div>
-       
     </header>
+    
     <main>
         <!-- <button onclick="scrollToTop()" id="btnScrollToTop">haut</button> -->
         <section class="our-missions">
@@ -184,5 +198,6 @@
     </footer>
 </body>
 <!-- <script src="javascript/scrolling-effect.js"></script> -->
-<script src="javascript/topButton.js"></script>
+<!-- <script src="javascript/topButton.js"></script> -->
+<script src="javascript/burger.js"></script>
 </html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Styles généraux */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles pour le menu burger */
+.burger-icon {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+/* Styles pour le menu de navigation */
+.nav-menu {
+  display: none;
+}
+
+/* Styles spécifiques aux appareils mobiles et tablettes */
+@media screen and (max-width: 768px) {
+  .burger-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="burger-toggle">
+    <label for="burger-toggle" class="burger-icon"></label>
+    <ul class="nav-menu">
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

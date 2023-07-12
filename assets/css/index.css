@@ -5,13 +5,15 @@
  font-family: 'Ubuntu', sans-serif; 
 scroll-behavior: smooth;
 
+
 }
 header {
-    background-image: url("../images/headerBg.jpg");
+    background-image: url("../images/garcinaKolaflur.png");
     width: 100%;
     height: 100vh; 
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 nav {
     /* background-color:rgba(255, 255, 255, .40); */
@@ -43,9 +45,9 @@ ul a:hover {
     color: #73ae42;
 
 }
-nav img {
-    margin-left: 10%;
-}
+/* nav img {
+    margin-left: 10%; 
+} */
 h1 {
     margin-left: 10%;
     padding-top: 250px; 
@@ -98,10 +100,31 @@ h1 {
     margin-top: 70px;
 }   
 .avantages img {
-    height: 70px;
+    /* height: 70px; */
     /* background-color:rgba(255, 255, 255, .40); */
-    background-color: #f3f3f3;
-    padding: 30px;
+    /* padding: 30px; */
+    max-width: 220px;
+    max-height: 150px;
+    
+}
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+
+}
+figcaption {
+    /* background-color: #222; */
+    background-color: #73ae42; 
+
+    color: #fff;
+    font: italic smaller sans-serif;
+    padding: 3px;
+    text-align: center;
+    width: 100%;
 }
 .our-missions{
     margin-top: 50px;
@@ -275,28 +298,9 @@ a {
     text-decoration: none;
     color: black;
 }
-
-/* bouton top */
-/*
-#btnScrollToTop {
-    display: none ;  Masquer le bouton par défaut 
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 99;
-    font-size: 16px;
-    border: none;
-    outline: none;
-    background-color: black;
-    color: white;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 260px;
-  }
-  
-  #btnScrollToTop:hover {
-    background-color: #333;
-  } */
+.toggle {
+    display: none;
+}
   
 /*  responsive desing to mobile and tablet */
 /* Media Queries */
@@ -310,15 +314,47 @@ a {
     .btnHeader {
         width: 90%;
         margin-left: 0;
-    }
-
-    .avantages {
-        width: 100%;
         
     }
-   .avantages img {
-    height: 40px;
-   }
+
+    .avantages{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+        /* margin-left: auto;
+        margin-right: auto; */
+        margin-top: 120px;
+    }   
+    .avantages img {
+        /* height: 70px; */
+        /* background-color:rgba(255, 255, 255, .40); */
+        /* padding: 30px; */
+        max-width: 50px;
+        max-height: 50px;
+        
+    }
+    figure {
+        border: thin #73ae42 solid;
+        display: block;
+        flex-flow: column;
+        padding: 5px;
+        max-width: 90px;
+        margin: auto;
+        text-align: center;
+    
+    }
+    figcaption {
+        /* background-color: #222; */
+        background-color: #73ae42; 
+    
+        color: #fff;
+        font: italic smaller sans-serif;
+        padding: 3px;
+        text-align: center;
+        width: 100%;
+    }
+   
 
     .products div {
         width: 100%;
@@ -359,7 +395,51 @@ a {
         /* color: black;
         font-weight: bold; */
     }
+    h1 {
+        padding-top: 200px; 
+        font-weight: bold;
 
+    }
+    .toggle {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+        margin-top: 40px;
+    }
+    .logo {
+        position: relative;
+        z-index: 20;
+        height: 120px;
+    }
+    .ouvrir {
+        display: block;
+    }
+    .fermer {
+        display: none;
+    }
+    .open .ouvrir {
+        display: none;
+    }
+    .open .fermer{
+display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: #f3f3f3;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+    .open .menu {
+        transform: translateX(0);
+    }
 }
 
 
@@ -396,5 +476,50 @@ a {
     form span {
         /* color: black;
         font-weight: bold; */
+    }
+    h1 {
+        padding-top: 200px; 
+        font-weight: bold;
+
+    }
+    .toggle {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+        margin-top: 40px;
+    }
+    .logo {
+        position: relative;
+        z-index: 20;
+        height: 120px;
+    }
+    .ouvrir {
+        display: block;
+    }
+    .fermer {
+        display: none;
+    }
+    .open .ouvrir {
+        display: none;
+    }
+    .open .fermer{
+display: block;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 100vh;
+        background: #f3f3f3;
+        flex-direction: column;
+        padding: 2rem;
+        justify-content: space-around;
+        transform: translateX(-100%);
+        transition: transform 1s;
+    }
+    .open .menu {
+        transform: translateX(0);
     }
 }
